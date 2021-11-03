@@ -1,0 +1,123 @@
+.title{
+    margin: auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #34648F;
+    height: 130px;
+}
+.windowheight{
+    height: 100vh;
+    background-image: url(../images/富士.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.logo{
+    height: 100px;
+}
+.warmsentence{
+    display: flex;
+    justify-content: center;
+    padding-top: 250px;
+    
+}
+.saying{
+    font-size: 30px;
+    font-weight: bold;
+}
+.learn-more{
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+}
+.btn {
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 3px;
+    height: 46px;
+    width: 196px;
+}
+
+/* 地圖頁 */
+.maparea{
+    height: 100vh;
+    background-color: #E2FFFD; 
+}
+.top5_text{
+    padding-top: 100px;
+    padding-left: 100px;
+}
+.top5_title{
+    font-size: 48px;
+    font-weight: bold;
+    color: #DAA53B;
+    padding-bottom: 10px;
+}
+.middleline{
+    background-color: black;
+    width: 560px;
+    height: 1px;
+}
+.hotspringspot{
+    font-size: 35px;
+    /* font-weight: bold; */
+    color: #41AFAF;
+    padding-top: 10px;
+}
+.searea{
+    width: 560px;
+}
+.spotexplanation{
+    font-size: 20px;
+    color:black;
+    padding-top: 15px;
+}
+.themap{
+    background-image: url(../images/japanmap.png);
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position: 60% 40%;;
+}
+
+/* Q&A頁 */
+.qa_area{
+    height: 100vh;
+    background-image: url(../images/q&a_bg2.png);
+    background-position: center;
+}
+.qa_text{
+    padding-top: 100px;
+    padding-left: 100px;
+}
+.qa_title{
+    font-size: 48px;
+    font-weight: bold;
+    color: #DAA53B;
+    padding-bottom: 10px;
+}
+.middlelinewhite{
+    background-color: #fff;
+    width: 580px;
+    height: 1px;
+}
+.hotspringqa{
+    font-size: 35px;
+    /* font-weight: bold; */
+    color: #A3FFFF;
+    padding-top: 10px;
+}
+.seedescription{
+    font-size: 20px;
+    color:white;
+    padding-top: 15px;
+}
+.sdarea{
+    width: 600px;
+}
+.qaicon{
+    height: 100vh;
+}
+.iconlink{
+   height: 70%;
+   padding-top: 250px;
+}
