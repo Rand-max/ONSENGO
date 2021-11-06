@@ -1,29 +1,99 @@
+html{
+    scroll-behavior: smooth;
+}
+.container-fluid{
+    overflow: hidden;
+}
+
+
+/* section */
+
+
+/* nav */
+.nav-item{
+    padding-top: 10px;
+    margin-top: 60%;
+ }
+ .nav-mine .active{
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(100, 182, 214) !important;
+    border-radius: 50%;
+}
+.nav-mine .nav-link{
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background-color:rgba(197, 198, 211, 0.7);
+    border-radius: 50%;
+}  
+	
+.nav-mine li{
+	position: relative;
+}
+.nav-mine li:hover::before {
+    position: absolute;
+    font-size: 10px;
+    padding: 4px;
+    background-color: rgba(0,0,0,0.4);
+    color: #fff;
+    right: 30px;
+    bottom: -2px;
+    min-width: 110px;
+    text-align: center;
+    border-radius: 5px;
+  }
+/* .nav-mine li:nth-child(1):hover::before{
+    content: "了解日本溫泉";
+}
+.nav-mine li:nth-child(2):hover::before{
+    content: "日本著名溫泉";
+}
+.nav-mine li:nth-child(3):hover::before{
+    content: "日本溫泉Q&A";
+} */
+nav{
+    width: 3%;
+    height: 20%;
+    overflow: hidden;
+    z-index: -1;
+    background-color:#6C6C6C;
+    margin-top: 18%;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    opacity: 70%;
+}
+
+/* 封面 */
 .title{
     margin: auto 0;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #34648F;
-    height: 130px;
+    height: 18%;
 }
-.windowheight{
+.article1{
     height: 100vh;
     background-image: url(../images/富士.jpg);
     background-size: cover;
     background-position: center;
 }
 .logo{
-    height: 100px;
+    height: 70%;
 }
 .warmsentence{
     display: flex;
     justify-content: center;
-    padding-top: 250px;
+    /* padding-top: 250px; */
+    margin-top: 11%;
     
 }
 .saying{
-    font-size: 30px;
+    font-size: 2em;
     font-weight: bold;
+    font-family: " LantingHei TC";
 }
 .learn-more{
     display: flex;
@@ -44,22 +114,22 @@
     background-color: #E2FFFD; 
 }
 .top5_text{
-    padding-top: 100px;
-    padding-left: 100px;
+    padding-top: 40%;
+    padding-left: 15%;
 }
 .top5_title{
-    font-size: 48px;
+    font-size: 300%;
     font-weight: bold;
     color: #DAA53B;
     padding-bottom: 10px;
 }
 .middleline{
     background-color: black;
-    width: 560px;
+    width: 90%;
     height: 1px;
 }
 .hotspringspot{
-    font-size: 35px;
+    font-size: 200%;
     /* font-weight: bold; */
     color: #41AFAF;
     padding-top: 10px;
@@ -68,16 +138,49 @@
     width: 560px;
 }
 .spotexplanation{
-    font-size: 20px;
+    font-size: 120%;
     color:black;
     padding-top: 15px;
 }
 .themap{
-    background-image: url(../images/japanmap.png);
-    background-size: 800px;
+    background-image: url(../images/japanmap_withl.png);
+    background-size: 40%;
     background-repeat: no-repeat;
-    background-position: 60% 40%;;
+    background-position: 70% 30%;;
 }
+
+/* 地圖連結 */
+.location_button{
+    position:absolute;
+    height: 11%;
+}
+.ibusuki_link{
+    margin-top: 63.7%;
+    margin-left: 5%;
+    z-index: 1;
+}
+.beppu_link{
+    margin-top: 54.5%;
+    margin-left: 6.4%;
+    z-index: 2;
+}
+.kusatsu_link{
+    margin-top: 39.5%;
+    margin-left: 42.7%;
+    z-index: 1;
+}
+.nobori_link{
+    margin-left: 48.5%;
+    margin-top: 14%;
+    z-index: 1;
+}
+.hakone_link{
+    margin-top: 47%;
+    margin-left: 47%;
+    z-index: 1;
+}
+
+
 
 /* Q&A頁 */
 .qa_area{
@@ -86,38 +189,56 @@
     background-position: center;
 }
 .qa_text{
-    padding-top: 100px;
-    padding-left: 100px;
+    /* padding-top: 100px; */
+    margin-top: 30%;
+    padding-left:10%;
 }
 .qa_title{
-    font-size: 48px;
+    font-size: 300%;
     font-weight: bold;
     color: #DAA53B;
     padding-bottom: 10px;
 }
 .middlelinewhite{
     background-color: #fff;
-    width: 580px;
+    width: 85%;
     height: 1px;
 }
 .hotspringqa{
-    font-size: 35px;
+    font-size:200%;
     /* font-weight: bold; */
     color: #A3FFFF;
     padding-top: 10px;
 }
 .seedescription{
-    font-size: 20px;
+    font-size: 150%;
     color:white;
     padding-top: 15px;
 }
 .sdarea{
-    width: 600px;
+    width: 500px;
 }
 .qaicon{
     height: 100vh;
 }
 .iconlink{
-   height: 70%;
-   padding-top: 250px;
+   height: 50%;
+   margin-top: 30%;
+}
+
+/* 淡入 */
+.cssanimation, .cssanimation span {
+    animation-duration: 3s;
+    animation-fill-mode: both;
+}
+
+.cssanimation span { display: inline-block }
+
+.fadeInBottom { animation-name: fadeInBottom }
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
 }

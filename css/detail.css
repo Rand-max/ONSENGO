@@ -1,0 +1,184 @@
+
+.vh100{
+    height: 100vh;
+}
+nav{
+    /* 以整個視窗座位置計算依據 */
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+}
+#article1{display: block;}
+.whole{
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+
+
+/* remove padding */
+.container-fluid{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+.no-gutter.row,
+.no-gutter.container,
+.no-gutter.container-fluid{
+margin-left: 0;
+margin-right: 0;
+padding-left: 0;
+padding-right: 0;
+}
+.no-gutter>[class^="col-"]{
+padding-left: 0;
+padding-right: 0;
+}
+
+/* 共用元件 */
+.title_background{
+    background-color: #14A9BD;
+    opacity: 80%;
+    width: 40%;
+    height: 140px;
+    border-radius: 0 20px 20px 0;
+}
+.daisetsu{
+    color: #44FFA5;
+}
+.fa{
+    color: yellow;
+    font-size: 4em;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/* 按鈕 */
+.change_page{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15%;
+}
+/* .btmain_page{
+    padding-right: 10px;
+}
+.previous_page{
+    padding-right: 10px;
+} */
+.btn{
+    margin-right: 10px;
+}
+
+/* 右側 */
+.detail_background{
+    background-color:#34638F;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    height: 150px;
+    margin-top: 10%;
+}
+.upperarea{
+    display: flex;
+}
+.onsengo_logo{
+    display: flex;
+    justify-content: center;
+}
+.middleline{
+    background-color: #fff;
+    width: 500px;
+    height: 1px;
+    margin-top: 10px;
+}
+.onsen_name{
+    margin-top: 10%;
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFC551;
+}
+.text_area{
+    color: white;
+    font-size: 18px;
+    width: 25em;
+    padding-top: 10px;
+    text-indent: 10%;
+}
+.secondarea{
+    color: white;
+    font-size: 18px;
+    width: 25em;
+    padding-top: 7px;
+    text-indent: 10%;
+}
+.publish_rate{
+    margin-top: 10%;
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFC551;
+}
+
+/* 草津 */
+.kusatsu_main{
+    background-image: url(../images/草津.jpg);
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    display: flex;
+    padding-top: 55%;
+}
+.kusatsu_title{
+    font-size: 72px;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    color: white;
+    font-family: "Microsoft JhengHei";
+}
+
+/* 箱根 */
+.hakone_main{
+    background-image: url(../images/箱根.jpg);
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    display: flex;
+    padding-top: 55%;
+}
+/* 登別 */
+.nobori_main{
+    background-image: url(../images/地獄谷①-1.jpg);
+    background-position: left bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    display: flex;
+    padding-top: 55%;
+}
+/* 指宿 */
+.ibusuki_main{
+    background-image: url(../images/指宿.jpg);
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    display: flex;
+    padding-top: 55%;
+}
+/* 別府 */
+.beppu_main{
+    background-image: url(../images/別府.jpg);
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    display: flex;
+    padding-top: 55%;
+}

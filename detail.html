@@ -5,15 +5,323 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="css/detail.css">
+    <title>ONSENGO Detail Page</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class="progress fixed-top h5 z1">
+      <div class="progress-bar progress-bar-striped bg-info" role="progressbar"  aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="whole">
+      <nav>
+        <div class="change_page">
+          <form action="./index.html">
+            <button type="submit" class="btn btn-outline-light btn-lg btn-radius">回主頁</button>
+          </form>
+          <button type="button" class="btn btn-outline-light btn-prev btn-lg btn-radius">回上頁</button>
+          <button type="button" class="btn btn-outline-light btn-next btn-lg btn-radius">下一頁</button>
+        </div>
+      </nav>
+      <section>
+        <!-- 草津 -->
+        <div id="article1" class="container-fluid article1 p-0 vh100">
+          <div class="row vh100 no-gutter">
+            <div class="col-8">
+                <div class="kusatsu_main h-100">
+                  <div class="title_background">
+                    <div class="kusatsu_title">1. 草津溫泉</div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="detail_background h-100">
+                  <!-- logo區 -->
+                  <div class="upper_area">
+                    <div class="onsengo_logo">
+                      <img src="./images/logo.png" alt="logo" class="logo">
+                    </div>
+                    <div class="middleline"></div>
+                  </div>
+                  <!-- 文字區 -->
+                  <div class="bottom_area">
+                    <div class="onsen_name">草津溫泉</div>
+                    <div class="onsen_description">
+                      <div class="text_area">
+                        草津溫泉位於<span class="daisetsu">關東群馬縣</span>，已連續12年被日本以《日本溫泉100》評鑑為第一名， 其最著名的景觀是「<span class="daisetsu">湯畑</span>」是位於草津溫泉街正中心的設施，是規模最大的泉源，每分鐘湧出4千公升溫泉，因為湧泉溫度非常高，可以看到在空中漫天飛舞的白色水蒸氣。
+                      </div>
+                      <div class="text_area">
+                        草津溫泉的泉質屬於<span class="daisetsu">硫磺泉</span>，水質呈強酸性，泉水富含氧化硫，因此呈顯出藍綠色，具有強效殺菌作用，據傳對神各種病症均有舒緩治療功效，因此草津地區早已成為日本溫泉療法的聖地。
+                      </div>
+                    </div>
+                    <div class="publish_rate">推薦指數</div>
+                    <div class="publish_star">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <!-- <div class="change_page">   
+                      <div class="btmain_page">
+                        <form action="./index.html">
+                          <button type="submit" class="btn btn-outline-light btn-lg">回主頁</button>
+                        </form>
+                      </div> 
+                      <div class="next_page">
+                        <form action="">
+                          <button type="submit" class="btn btn-outline-light btn-lg">下一頁</button>
+                        </form>
+                      </div> 
+                    </div> -->
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- 箱根 -->
+        <div id="article2" class="container-fluid article2 p-0 vh100">
+          <div class="row vh100 no-gutter">
+            <div class="col-8">
+                <div class="hakone_main h-100">
+                  <div class="title_background">
+                    <div class="kusatsu_title">2. 箱根溫泉</div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="detail_background h-100">
+                  <!-- logo區 -->
+                  <div class="upper_area">
+                    <div class="onsengo_logo">
+                      <img src="./images/logo.png" alt="logo" class="logo">
+                    </div>
+                    <div class="middleline"></div>
+                  </div>
+                  <!-- 文字區 -->
+                  <div class="bottom_area">
+                    <div class="onsen_name">箱根溫泉</div>
+                    <div class="onsen_description">
+                      <div class="text_area">
+                        箱根溫泉位於<span class="daisetsu">關東神奈川縣</span>，因其泉質優良、同時又可一覽<span class="daisetsu">富士山</span>美景而備受日本人和外國遊客喜愛，箱根溫泉的泉質種類衆多， 有可以改善失眠、緩解憂鬱情緒的單純溫泉，還有對改善皮膚外傷、畏寒體質有較好效果的「硫酸鹽泉」，給予皮膚足夠的鹽分緩解皮膚幹燥的「鹽化物泉」，俗稱「美人湯」，可軟化皮膚廢舊角質的「炭酸水素鹽泉」，還有將近20多種不同功效的泉質。
+                      </div>
+                      <div class="text_area">
+                        此外，箱根溫泉附近有非常豐富的<span class="daisetsu">溫泉旅館</span>可供選擇，有可著泳衣入場的溫泉主題樂園，不用在意他人目光的包場溫泉，不住宿也可入浴的當日往返溫泉，只需足部浸入溫泉的簡易入浴型溫泉餐廳或咖啡館等等。
+                      </div>
+                    </div>
+                    <div class="publish_rate">推薦指數</div>
+                    <div class="publish_star">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <!-- <div class="change_page">   
+                      <div class="btmain_page">
+                        <form action="./index.html">
+                          <button type="submit" class="btn btn-outline-light btn-lg">回主頁</button>
+                        </form>
+                      </div> 
+                      <div class="previous_page">
+                        <form action="">
+                          <button type="submit" class="btn btn-outline-light btn-lg">回上頁</button>
+                        </form>
+                      </div> 
+                      <div class="next_page">
+                        <form action="">
+                          <button type="submit" class="btn btn-outline-light btn-lg">下一頁</button>
+                        </form>
+                      </div> 
+                    </div> -->
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- 登別 -->
+        <div id="article3" class="container-fluid article3 p-0 vh100">
+          <div class="row vh100 no-gutter">
+            <div class="col-8">
+                <div class="nobori_main h-100">
+                  <div class="title_background">
+                    <div class="kusatsu_title">3. 登別溫泉</div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="detail_background h-100">
+                  <!-- logo區 -->
+                  <div class="upper_area">
+                    <div class="onsengo_logo">
+                      <img src="./images/logo.png" alt="logo" class="logo">
+                    </div>
+                    <div class="middleline"></div>
+                  </div>
+                  <!-- 文字區 -->
+                  <div class="bottom_area">
+                    <div class="onsen_name">登別溫泉</div>
+                    <div class="onsen_description">
+                      <div class="text_area">
+                        登別溫泉位於<span class="daisetsu">北海道登別市</span>，自古以來就是有名的溫泉療養地，於日俄戰爭時被指定為傷兵的療養地，因而聲名大噪。登別溫泉同時有9種名湯泉質，包括硫磺泉、食塩泉、明礬泉、芒硝泉、綠礬泉、鐵泉、酸性鐵泉、重曹泉、鐳泉，於世界中十分罕見，因此享有「<span class="daisetsu">溫泉百貨公司</span>」的美譽。
+                      </div>
+                      <div class="text_area">
+                        而地獄谷是登別溫泉的湧出區，每天湧出超過10000噸泉水，且有多種不同泉質。由火山爆發所形成，可以看到超多噴氣孔和湧泉，因為從地表噴出許多帶著濃厚硫磺氣味的煙霧和沸騰的泉水，才有了「<span class="daisetsu">登別地獄谷</span>」這樣的名稱。
+                      </div>
+                    </div>
+                    <div class="publish_rate">推薦指數</div>
+                    <div class="publish_star">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    </div>
+                    <!-- <div class="change_page">   
+                      <div class="btmain_page">
+                        <form action="./index.html">
+                          <button type="submit" class="btn btn-outline-light btn-lg">回主頁</button>
+                        </form>
+                      </div> 
+                      <div class="previous_page">
+                        <form action="">
+                          <button type="submit" class="btn btn-outline-light btn-lg">回上頁</button>
+                        </form>
+                      </div> 
+                      <div class="next_page">
+                        <form action="">
+                          <button type="submit" class="btn btn-outline-light btn-lg">下一頁</button>
+                        </form>
+                      </div> 
+                    </div> -->
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- 指宿 -->
+        <div id="article4" class="container-fluid article4 p-0 vh100">
+          <div class="row vh100 no-gutter">
+            <div class="col-8">
+                <div class="ibusuki_main h-100">
+                  <div class="title_background">
+                    <div class="kusatsu_title">4. 指宿溫泉</div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="detail_background h-100">
+                  <!-- logo區 -->
+                  <div class="upper_area">
+                    <div class="onsengo_logo">
+                      <img src="./images/logo.png" alt="logo" class="logo">
+                    </div>
+                    <div class="middleline"></div>
+                  </div>
+                  <!-- 文字區 -->
+                  <div class="bottom_area">
+                    <div class="onsen_name">指宿溫泉</div>
+                    <div class="onsen_description">
+                      <div class="text_area">
+                        指宿溫泉位於<span class="daisetsu">九州鹿兒島縣薩摩半島南端</span>，在群山及島嶼的環繞下，指宿溫泉周邊有著豐富的觀光景點，加上與南國相近的悠然閒適的氛圍，也讓這個地區在到訪旅客間有「東方夏威夷」的美稱。指宿溫泉地區最有名的「<span class="daisetsu">砂浴溫泉</span>」，即穿上浴衣後，躺在透過溫泉熱度加溫的沙上，由現場工作人員以鏟子將遊客的身體埋進砂中的獨特溫浴方式，僅需埋在沙中10〜15分鐘，就有驚人的出汗效果，除了泡溫泉，附近還有不少美麗的景點可遊覽，如薩摩半島的唐船峽、池田湖、開聞岳、開聞山麓自然公園、長崎鼻、龍宮神社、揖宿神社、薩摩傳承館等。
+                      </div>
+                    </div>
+                    <div class="publish_rate">推薦指數</div>
+                    <div class="publish_star">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    </div>
+                    <!-- <div class="change_page">   
+                      <div class="btmain_page">
+                        <form action="./index.html">
+                          <button type="submit" class="btn btn-outline-light btn-lg">回主頁</button>
+                        </form>
+                      </div> 
+                      <div class="previous_page">
+                        <form action="">
+                          <button type="submit" class="btn btn-outline-light btn-lg">回上頁</button>
+                        </form>
+                      </div> 
+                      <div class="next_page">
+                        <form action="">
+                          <button type="submit" class="btn btn-outline-light btn-lg">下一頁</button>
+                        </form>
+                      </div> 
+                    </div> -->
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- 別府 -->
+        <div id="article5" class="container-fluid article5 p-0 vh100">
+          <div class="row vh100 no-gutter">
+            <div class="col-8">
+                <div class="beppu_main h-100">
+                  <div class="title_background">
+                    <div class="kusatsu_title">5. 別府溫泉</div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="detail_background h-100">
+                  <!-- logo區 -->
+                  <div class="upper_area">
+                    <div class="onsengo_logo">
+                      <img src="./images/logo.png" alt="logo" class="logo">
+                    </div>
+                    <div class="middleline"></div>
+                  </div>
+                  <!-- 文字區 -->
+                  <div class="bottom_area">
+                    <div class="onsen_name">別府溫泉</div>
+                    <div class="onsen_description">
+                      <div class="text_area">
+                        別府溫泉位於<span class="daisetsu">九州別府市</span>，其湧泉數量居<span class="daisetsu">日本之冠</span>，全球第二，同時也是世界最大個能讓人入浴的溫泉地。此外，泉質之豐富在世界上也是屈指可數的，根據溫泉性質分類，世界上11種溫泉種類中，除了放射能溫泉，別府就有10種不同性質的溫泉。
+                      </div>
+                      <div class="text_area">
+                        別府溫泉另一個特徵是<span class="daisetsu">地獄溫泉八景</span>，這些奇特的溫泉因為溫泉溫度過高只能用於觀賞，加上源源不斷噴出霧氣的景象有如火山爆發，因為如此不適合人類居住的環境，別府居民便將它取名為地獄，也成了別府泡溫泉之外，相當特殊的景觀特色。
+                      </div>
+                    </div>
+                    <div class="publish_rate">推薦指數</div>
+                    <div class="publish_star">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <!-- <div class="change_page">   
+                      <div class="btmain_page">
+                        <form action="./index.html">
+                          <button type="submit" class="btn btn-outline-light btn-lg">回主頁</button>
+                        </form>
+                      </div> 
+                      <div class="previous_page">
+                        <form action="">
+                          <button type="submit" class="btn btn-outline-light btn-lg">回上頁</button>
+                        </form>
+                      </div> 
+                    </div> -->
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
  
  
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+    <script src="js/detail.js"></script>
   </body>
 </html>

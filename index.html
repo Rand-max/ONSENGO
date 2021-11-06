@@ -8,60 +8,98 @@
     <link rel="stylesheet" href="css/main.css">
     <title>ONSENGO Main Page</title>
   </head>
-  <body>
-    <!-- 封面   -->
-    <div class="windowheight">
-        <nav>
-            <div class="container-fluid title">
-                <img src="./images/logo.png" class="logo" alt="logo">
-            </div>
-        </nav>
-        <header>
-            <div class="container-fluid warmsentence">
-                <div class="saying">沉浸於日本的溫泉中，讓疲勞在其溫熱的包覆中消散而去吧</div>
-            </div>
-            <div class="container learn-more">
-                <form action="./detail.html">
-                    <button type="submit" class="btn btn-outline-light">了解更多</button>
-                </form>
-            </div>    
-        </header>
-    </div>
-    <section>
-        <!-- 地圖頁 -->
-        <div class="container-fluid maparea themap">
-            <div class="top5_text">
-                <div class="top5_title">日本著名溫泉 TOP 5</div>
-                <div class="middleline"></div>
-                <div class="hotspringspot">JAPAN TOP 5 HOTSPRING SPOT</div>
-                <div class="searea">
-                    <div class="spotexplanation">日本的溫泉不僅風景美，其泉質也具有療養的功效喔，該網站整理了五個私心推薦的日本溫泉聖地，點擊紅色圖標來踏入這個療育的溫泉世界吧 !</div>
+  <body data-spy="scroll" data-target="#nav" data-offset="0">
+    <nav class="d-flex justify-content-end align-items-center fixed-top pr-3">
+        <ul id="nav" class="nav nav-mine flex-column">
+          <li class="nav-item mb-3"><a href="#article1" data-toggle="tooltip" data-placement="right" title="了解日本溫泉"  class="nav-link"></a></li>
+          <li class="nav-item mb-3"><a href="#article2"  data-toggle="tooltip" data-placement="right" title="日本著名溫泉" class="nav-link"></a></li>
+          <li class="nav-item mb-3"><a href="#article3"  data-toggle="tooltip" data-placement="right" title="日本溫泉Q&A" class="nav-link"></a></li>
+        </ul>
+    </nav>
+    <div class="whole">
+        <!-- 封面   -->
+        <section>
+            <div id="article1" class="arti article1">
+                <div class="container-fluid title">
+                    <img src="./images/logo.png" class="logo" alt="logo">
                 </div>
-            </div>  
-        </div>
-        <!-- Q&A頁 -->
-        <div class="container-fluid qa_area">
-            <div class="container-fluid">
+                <header>
+                    <div class="container-fluid warmsentence">
+                        <div class="saying cssanimation sequence fadeInBottom">沉浸於日本的溫泉中，讓疲勞在其溫熱的包覆中消散而去吧</div>
+                    </div>
+                    <div class="container learn-more">
+                        <form action="./detail.html">
+                            <button type="submit" class="btn btn-outline-light">了解更多</button>
+                        </form>
+                    </div>    
+                </header>
+            </div>
+        </section>
+        <!-- 地圖頁 -->
+        <section>
+            <div class="container-fluid arti article2 maparea themap" id="article2">
                 <div class="row">
-                    <div class="col-7">
-                        <div class="qa_text">
-                            <div class="qa_title">日本溫泉 Q&A</div>
-                            <div class="middlelinewhite"></div>
-                            <div class="hotspringqa">JAPAN HOTSPRING Q&A</div>
-                            <div class="sdarea">
-                                <div class="seedescription">想知道更多關於日本溫泉的歷史以及由來嗎 ? 點擊右側連結看看吧 !</div>
+                    <div class="col-5">
+                        <div class="top5_text">
+                            <div class="top5_title">日本著名溫泉 TOP 5</div>
+                            <div class="middleline"></div>
+                            <div class="hotspringspot">JAPAN TOP 5 HOTSPRING SPOT</div>
+                            <div class="searea">
+                                <div class="spotexplanation">日本的溫泉不僅風景美，其泉質也具有療養的功效喔，該網站整理了五個私心推薦的日本溫泉聖地，點擊紅色圖標來踏入這個療育的溫泉世界吧 !</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-5">
-                        <div class="qaicon">                        
-                            <a class="media-icon" href="./detail.html"><img src="./images/qaicon.png" class="iconlink" alt="qanda"></a>
-                        </div>
+                    <div class="col-7">
+                        <!-- 指宿 -->
+                        <a href="https://www.google.com.tw/maps/place/%E6%8C%87%E5%AE%BF%E7%99%BD%E6%B0%B4%E9%A4%A8/@31.2518737,130.6531255,14.83z/data=!4m8!3m7!1s0x353e80183982fcd3:0x94145c1b1a7206c7!5m2!4m1!1i2!8m2!3d31.253832!4d130.655518?hl=zh-TW">
+                            <img id="ibusuki" src="./images/location.png"  data-toggle="tooltip" data-placement="left" title="指宿溫泉" alt="ibusuki" class="location_button ibusuki_link">
+                        </a> 
+                        <!-- 別府 -->
+                        <a href="https://www.google.com/maps/place/%E5%88%A5%E5%BA%9C%E6%B8%A9%E6%B3%89/@33.2332902,131.1978641,9z/data=!4m9!1m2!2m1!1z5Yil5bqcIOa6q-aziQ!3m5!1s0x3546a730a1a4ff67:0x28122c0ef96460ef!8m2!3d33.2776228!4d131.5059923!15sCg3liKXlupwg5rqr5rOJkgESdG91cmlzdF9hdHRyYWN0aW9u?hl=zh-TW">
+                            <img id="beppu" src="./images/location.png" data-toggle="tooltip" data-placement="left" title="別府溫泉" alt="beppu" class="location_button beppu_link">
+                        </a> 
+                        <!-- 草津 -->
+                        <a href="https://www.google.com.tw/maps/place/%E8%8D%89%E6%B4%A5%E6%BA%AB%E6%B3%89+%E6%B9%AF%E7%95%91/@36.6229647,138.5945344,17z/data=!3m1!4b1!4m5!3m4!1s0x601de655193753b5:0xe9421fc4cee55f20!8m2!3d36.6229647!4d138.5967231?authuser=0&hl=zh-TW">
+                            <img id="kusatsu" src="./images/location.png"  data-toggle="tooltip" data-placement="left" title="草津溫泉"  alt="kusatsu" class="location_button kusatsu_link">
+                        </a>  
+                        <!-- 登別 -->
+                        <a href="https://www.google.com.tw/maps/place/%E7%99%BB%E5%88%A5%E6%BA%AB%E6%B3%89%E9%84%89+%E7%80%A7%E4%B9%83%E5%AE%B6/@42.4933625,141.1394801,15.64z/data=!4m8!3m7!1s0x5f7566c471f69f3d:0xab4ac0f3156aaa06!5m2!4m1!1i2!8m2!3d42.4941573!4d141.1418083?hl=zh-TW">
+                            <img id="nobori" src="./images/location.png" data-toggle="tooltip" data-placement="left" title="登別溫泉" alt="nobori" class="location_button nobori_link">
+                        </a>  
+                        <!-- 箱根 -->
+                        <a href="https://www.google.com.tw/maps/place/%E6%97%A5%E6%9C%AC%E3%80%92250-0404+%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%B8%A3%E8%B6%B3%E6%9F%84%E4%B8%8B%E9%83%A1%E7%AE%B1%E6%A0%B9%E7%94%BA%E7%AE%B1%E6%A0%B9%E6%BA%AB%E6%B3%89/@35.1942139,138.8760934,10.38z/data=!4m5!3m4!1s0x6019a2166e736343:0xbc2d38a905872570!8m2!3d35.2414492!4d139.0589836?hl=zh-TW">
+                            <img id="hakone" src="./images/location.png" data-toggle="tooltip" data-placement="right" title="箱根溫泉" alt="hakone" class="location_button hakone_link">
+                        </a>       
                     </div>
                 </div>
-            </div>     
-        </div>
-    </section>
+            </div>
+        </section>            
+        <!-- Q&A頁 -->
+        <section>
+            <div id="article3" class="container-fluid arti article3 qa_area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-7">
+                            <div class="qa_text">
+                                <div class="qa_title">日本溫泉 Q&A</div>
+                                <div class="middlelinewhite"></div>
+                                <div class="hotspringqa">JAPAN HOTSPRING Q&A</div>
+                                <div class="sdarea">
+                                    <div class="seedescription">想知道更多關於日本溫泉的歷史以及由來嗎 ? 點擊右側連結看看吧 !</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="qaicon">                        
+                                <a class="media-icon" href="./detail.html"><img src="./images/qaicon.png" class="iconlink" alt="qanda"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+        </section>
+    </div>
+    
     <footer></footer>
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
