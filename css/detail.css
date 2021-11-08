@@ -98,13 +98,13 @@ padding-right: 0;
 }
 .onsen_name{
     margin-top: 10%;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #FFC551;
 }
 .text_area{
     color: white;
-    font-size: 18px;
+    font-size: 1.2rem;
     width: 25em;
     padding-top: 10px;
     text-indent: 10%;
@@ -118,7 +118,7 @@ padding-right: 0;
 }
 .publish_rate{
     margin-top: 10%;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #FFC551;
 }
@@ -134,7 +134,7 @@ padding-right: 0;
     padding-top: 55%;
 }
 .kusatsu_title{
-    font-size: 72px;
+    font-size: 4.5rem;
     display: flex;
     justify-content: center;
     padding-top: 10px;
