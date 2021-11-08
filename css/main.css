@@ -14,14 +14,14 @@ html{
     padding-top: 10px;
     margin-top: 60%;
  }
- .nav-mine .active{
+  .active{
     padding: 0;
     width: 20px;
     height: 20px;
     background-color: rgb(100, 182, 214) !important;
     border-radius: 50%;
 }
-.nav-mine .nav-link{
+.nav-link{
     padding: 0;
     width: 20px;
     height: 20px;
